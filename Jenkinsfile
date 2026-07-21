@@ -7,12 +7,7 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'master', url: 'https://github.com/yogeshwarsaini/three-tier-jenkins-project.git'
-            }
-        }
-
+        
         stage('Build Backend') {
             steps {
                 dir('polling-app-server') {
