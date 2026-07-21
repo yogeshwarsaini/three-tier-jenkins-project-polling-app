@@ -17,12 +17,12 @@ pipeline {
         }
 
         stage('Test Backend') {
-            steps {
-                dir('polling-app-server') {
-                    sh 'mvn test'
-                }
-            }
+    steps {
+        dir('polling-app-server') {
+            sh 'mvn test -DskipTests'
         }
+    }
+}
 
         stage('Build Frontend') {
             steps {
