@@ -117,7 +117,7 @@ pipeline {
             echo '✅ Backend + Frontend Deployed Successfully!'
         }
         failure {
-            echo '❌ Deployment Failed! Check console logs.'
+            echo '❌ Deployment Failed!Check console logs.'
         }
     }
 }
