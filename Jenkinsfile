@@ -93,8 +93,8 @@ pipeline {
         stage('Deploy Frontend') {
             steps {
                 sh '''
-                    sudo rm -rf /var/www/html/*
-                    sudo cp -r polling-app-client/build/* /var/www/html/
+                    rm -rf /var/www/html/*
+                    cp -r polling-app-client/build/* /var/www/html/
                     sudo systemctl restart nginx
                 '''
             }
