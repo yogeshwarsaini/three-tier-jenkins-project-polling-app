@@ -56,7 +56,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/<tumhara-username>/three-tier-jenkins-project.git'
+                git branch: 'main', url: 'https://github.com/yogeshwarsaini/three-tier-jenkins-project.git'
             }
         }
 
