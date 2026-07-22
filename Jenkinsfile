@@ -95,7 +95,7 @@ pipeline {
                 sh '''
                     rm -rf /var/www/html/*
                     cp -r polling-app-client/build/* /var/www/html/
-                    sudo systemctl restart nginx
+                    echo "frontend deployed successfully"
                 '''
             }
         }
